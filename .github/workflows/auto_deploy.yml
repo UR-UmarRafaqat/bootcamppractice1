@@ -28,7 +28,7 @@ jobs:
              node-version: 12 
       # Runs a set of commands using the runners shell
       - name: Installing surge
-        run: npm insatll -- g surge
+        run: npm insatll --global surge
     
       - name: deplying surge
         run: surge ./ http://urpracticebootcamp1.surge.sh/ --token $ {{ secrets.SURGE_Token}}
